@@ -5,7 +5,7 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  // GET route for getting all of the todos
+  // GET route for getting all of the burgers
   app.get("/", function(req, res) {
 	db.Burger.findAll({}).then(function(dbBurger) {
 		var hbsObject = {
@@ -16,28 +16,28 @@ module.exports = function(app) {
 	});
   });
 
-  // POST route for saving a new todo. You can create a todo using the data on req.body
+  // POST route for saving a new burger. You can create a burger using the data on req.body
   app.post("/api/burgers", function(req, res) {
 	 db.Burger.create({
 		 burger_name: req.body.name,
 		 devoured: false
 	  })
       .then(function(dbBurger) {
+		  console.log(dbBurger);
         res.json(dbBurger);
       });
   });
 
-  // PUT route for updating todos. The updated todo will be available in req.body
+  // PUT route for updating burgers. The updated burgers will be available in req.body
   app.put("/api/burgers/:id", function(req, res) {
-	db.Burger.update(
-	{
-		devoured: req.body.devoured
-	},{
+	db.Burger.update(req.body
+	,{
         where: {
-          id: req.body.id
+          id: req.params.id
         }
       }).then(function(dbBurger) {
-        res.json(dbBurger);
+		  console.log(dbBurger);
+		  res.json(dbBurger);
       });
   });
 };
