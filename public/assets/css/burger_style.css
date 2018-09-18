@@ -1,0 +1,96 @@
+body{
+	background-color: #243d99;
+	font-family: 'Baloo Tammudu', cursive;
+}
+
+.burgertimeImage {
+	width:20rem;
+	margin: 0 auto;
+}
+
+img {
+	width:100%;
+	margin: 0 auto;
+}
+
+.jumbotron {
+	padding: 0;
+	background-color: #243d99;
+	margin-bottom: 0;
+}
+
+label {
+	color: #d4272b;
+	font-size: 3em;
+	margin-bottom: -2rem;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #faab1e;
+	padding-left: 2rem;
+}
+
+#burger {
+	margin-top: -.5rem;
+}
+
+
+.btn-primary {
+	background-color: #faab1e;
+	border-color:#1e9948;
+	color: #d4272b;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+	margin-left: 2rem;
+}
+
+.btn-primary2 {
+	background-color: #faab1e;
+	border-color:#1e9948;
+	color: #d4272b;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+
+}
+
+
+.btn-primary:hover, .btn-primary2:hover {
+	border-color:#1e9948;
+	background-color: #ef8a22;
+	color: #d4272b;
+}
+
+.btn-burger {
+	background-color: #91501e;
+	color: #378e5d;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+	border-color:#d4272b;
+}
+
+.btn-burger:hover{
+	background-color: #91501e;
+	color: #378e5d;
+	padding-top:.7rem;
+	padding-bottom: -.7rem;
+	border-color:#d4272b;
+}
+
+.burgertime {
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+
+.add_burger {
+	margin-top: -2rem;
+	padding: 0 10rem;
+}
+
+.card {
+	border-color: #209848;
+	margin-bottom: 1rem;
+}
+
+.card-body {
+
+	color: #d4272b;
+	font-size: 1.3em;
+}
